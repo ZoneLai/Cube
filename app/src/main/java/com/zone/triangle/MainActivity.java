@@ -15,6 +15,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        mTriangleSurfaceView.onResume();
+    }
+
+    @Override
     protected void onStop() {
         super.onStop();
         mTriangleSurfaceView.onStop();

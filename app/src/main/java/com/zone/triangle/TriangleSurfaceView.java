@@ -28,6 +28,7 @@ public class TriangleSurfaceView extends GLSurfaceView {
     @Override
     public void onResume() {
         super.onResume();
+        setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
     }
 
     @Override
